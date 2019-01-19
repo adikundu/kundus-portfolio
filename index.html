@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#1D1D1D">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aditya's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/fonts/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <style>
+
+  p:hover{
+    cursor: default;
+  }
+  .card{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+  hr{
+      transform: rotate(90deg);
+      margin: 10px;
+  }
+
+ .Rectangle {
+  width: 478.15px;
+  height: 425px;
+  position: absolute;
+  top:880px;
+  left: 90px;
+  border-radius: 4px;
+  background-image: linear-gradient(to left, #8066dc, #63299f);
+  clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
+  z-index: 2;
+}
+.Rectangle1 {
+width: 500px;
+height: 400px;
+position: absolute;
+top:880px;
+left: 700px;
+border-radius: 4px;
+background-image: linear-gradient(to bottom, #7cedf5, #4687e7);
+z-index: 2;
+clip-path: polygon(5% 24%, 100% 0, 100% 100%, 0 72%);
+
+
+}
+.Rectangle2 {
+  width: 531.25px;
+    height: 425px;
+position: absolute;
+top:1380px;
+left: 60px;
+border-radius: 4px;
+background-image: linear-gradient(to top, #ec9d49, #f7d473);
+clip-path: polygon(0 26%, 100% 0, 83% 100%, 6% 84%);
+z-index: 2;
+}
+
+        .project-tag-mod{
+            background: rgba(184, 190, 203, 0.4);
+            margin-bottom: 0.5rem;
+            margin-right: 0.5rem;
+            border-radius: 2px;
+            border-width: 0px;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 0.5rem;
+            padding: 0.7rem 0.8rem 0.6rem 0.8rem;
+        }
+
+.card-title-text{
+    font-size:1.5rem;
+    color: #1d1d1d;
+    font-family: Colfax Regular;
+}
+
+.card-body-text{
+    font-family: Colfax Regular;
+    color: #838383;
+    font-size: 0.75rem;
+    line-height: 1.8;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.card-title-padding-mod{
+    padding-top: 1rem;
+}
+
+.card-styling{
+  box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);
+  padding: 1.7rem;
+  padding-bottom: 1.9rem;
+}
+
+.bg-lines{
+  position: fixed;
+  margin-left: 15rem;
+  width: 3px;
+  height: 100%;
+  background-color: #2F2F2F;
+  z-index: 1;
+  opacity: 0.77;
+}
+
+  </style>
+  <body>
+
+<div class="Rectangle is-hidden-mobile"></div>
+<div class="Rectangle1 is-hidden-mobile"></div>
+<div class="Rectangle2 is-hidden-mobile"></div>
+
+  <section>
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="padding-top: 2rem; padding-right: 2rem;">
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item active-nav-link" href="https://adikundu.github.io/">
+            <span><nobr>Home</nobr></span>
+          </a>
+          <a class="navbar-item nav-link" href="https://adikundu.github.io/about">
+            <span><nobr>About</nobr></span>
+          </a>
+          <a class="navbar-item nav-link" href="https://adikundu.github.io/#project-section">
+            <span><nobr>Projects</nobr></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+
+
+
+    <main>
+        <section class="container">
+            <div class="column home-padding-mod">
+                <div class="columns" style="margin-left: 0rem;">
+                  <div class="column is-two-fifths is-size-5 body-text-padding-mod">
+                      <p id="eggo-hover" class="home-header-text">Hi there!</p>
+                      <p class="home-header-text">I'm Kundu. I'm a CS undergrad who practices design. Looking forward to pursing a graduate degree in Human-Computer Interaction!</p>
+                      <p class="home-header-text" style="padding:2rem 0; color: #B8BECB;">Read more about me <a href="https://adikundu.github.io/about" class="footer-link"><span><nobr>here</nobr></span></a></p>
+                  </div>
+                  <div class="column is-2 is-offset-3 is-hidden-mobile">
+                    <figure class="image is-4by5" style="width: 18rem; height: 18rem; margin-top: -4rem;">
+                      <img id="eggo-img" src="css/assets/lilWhale1.gif">
+                    </figure>
+                  </div>
+                </div>
+        </section>
+        <section style="background-color: #1d1d1d; position:relative;" id="project-section" >
+          <div class="bg-lines"></div>
+            <div class="container" style="padding:3rem 0;">
+                <div class="columnn home-padding-mod">
+                    <div class="column is-two-fifths body-text-padding-mod jugaad">
+                        <p class="home-header-text has-text-white" style="z-index: 5;">Here's a few project that I've worked on the past few years.</p>
+                    </div>
+                </div>
+                <div class="columns home-padding-mod">
+                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                            <div style="margin: 10px 0;">
+                                    <a class="button project-tag-mod">BRANDING</a>
+                                    <a class="button project-tag-mod">UI</a>
+                            </div>
+                        <div  class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                            <div class="card-content card-styling">
+                                <div class="media card-title-padding-mod" >
+                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">Aadhaar Tech</p>
+                                </div>
+
+                                <div class="content">
+                                    <p class="card-body-text">I was required to design the visual identity and digital interfaces of the new product division of Labwire Tech Pvt Ltd called Aadhaar Tech, which focuses on providing Aadhaar based technological solutions</p>
+                                </div>
+
+                                <a class="card-body-text" href="https://adikundu.github.io/aadhaar"><span><nobr>Learn more</nobr></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relate;z-index:100"  class="column is-5 is-offset-2 card-margin-mod">
+                            <div style="margin: 10px 0;">
+                                    <a class="button project-tag-mod">BRANDING</a>
+                            </div>
+                        <div class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                            <div class="card-content card-styling">
+                                <div class="media card-title-padding-mod">
+                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">CSE Association</p>
+                                    </div>
+
+                                <div class="content">
+                                    <p class="card-body-text"> I worked on the development of the visual identity of CSE Association, the student-run association of the department of Computer Science and Engineering SRM IST.<a class="katwao-apna"> You've found an Easter Egg!</a></p>
+                                </div>
+
+                                <a class="card-body-text" href="https://adikundu.github.io/csea"><span><nobr>Learn more</nobr></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="columns home-padding-mod">
+                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                            <div style="margin: 10px 0;">
+                                    <a class="button project-tag-mod">BRANDING</a>
+                            </div>
+                        <div  class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                            <div class="card-content card-styling">
+                                <div class="media card-title-padding-mod" >
+                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">Campskil</p>
+                                </div>
+
+                                <div class="content">
+                                    <p class="card-body-text">I was required to design the visual identity for Campskil, an ed-tech startup that focuses on organizing skill develpoment workshops in colleges and schools.</p>
+                                </div>
+
+                                <a class="card-body-text" href="https://adikundu.github.io/campskil"><span><nobr>Learn more</nobr></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="hero">
+                <div class="hero-body">
+                  <div class="container">
+                      <div class="columns footer-padding-mod">
+                          <div class="column is-four-fifths body-text-padding-mod">
+                              <div class="columns has-text-grey">
+                                  <div class="column is-7">
+                                      <p class="is-footer-text">You can reach out to me at <a class="footer-link" href="mailto:adikundu1907@gmail.com"><span><nobr>adikundu1907@gmail.com</nobr></span></a>
+                                          for any inquiries or to invite me
+                                          over for lunch.</p>
+                                      <p class="is-footer-text">To know more about me, you can find me on <a class="footer-link" href="https://www.instagram.com/adikundu/"><span><nobr>Instagram</nobr></span></a> and
+                                          <a class="footer-link" href="https://www.linkedin.com/in/adikundu/"><span><nobr>LinkedIn</nobr></span></a>.</p>
+                                  </div>
+                                  <div class="column is-4 is-offset-3">
+                                      <p class="project-image-label credits-padding-mod">
+                                          With some legendary assist from <a class="footer-link" href="https://github.com/mainadw"><span><nobr>Adwitiya</nobr></span></a>, this site was designed and developed at home! ^.^
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+        </main>
+    <div>
+
+    </div>
+
+    <script type="text/javascript" src="lib/main.js">
+      function Start() {
+
+        $('#eggo-hover').on({
+
+        mouseenter: function () { $('#eggo-img').prop('src', 'css/assets/lilWhale1.gif') },
+        mouseleave: function () { $('#eggo-img').prop('src', 'css/assets/lilWhale.png') }
+
+          });
+}
+
+$(Start);
+    </script>
+
+
+  </body>
+</html>
