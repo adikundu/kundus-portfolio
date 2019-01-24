@@ -27,39 +27,41 @@
   }
 
  .Rectangle {
-  width: 478.15px;
-  height: 425px;
+  width: 30rem;
+  height: 27rem;
   position: absolute;
-  top:880px;
-  left: 90px;
+  top:0rem;
+  left: -1rem;
   border-radius: 4px;
   background-image: linear-gradient(to left, #8066dc, #63299f);
   clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
-  z-index: 2;
+  -webkit-clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
+  z-index: -2;
 }
 .Rectangle1 {
-width: 500px;
-height: 400px;
+width: 32rem;
+height: 25rem;
 position: absolute;
-top:880px;
-left: 700px;
+top:0rem;
+left:-2rem;
 border-radius: 4px;
 background-image: linear-gradient(to bottom, #7cedf5, #4687e7);
-z-index: 2;
+z-index: -2;
 clip-path: polygon(5% 24%, 100% 0, 100% 100%, 0 72%);
-
+-webkit-clip-path: polygon(5% 24%, 100% 0, 100% 100%, 0 72%);
 
 }
 .Rectangle2 {
-  width: 531.25px;
-    height: 425px;
+  width: 33rem;
+    height: 25rem;
 position: absolute;
-top:1380px;
-left: 60px;
+top:0rem;
+left: -2rem;
 border-radius: 4px;
 background-image: linear-gradient(to top, #ec9d49, #f7d473);
 clip-path: polygon(0 26%, 100% 0, 83% 100%, 6% 84%);
-z-index: 2;
+z-index: -2;
+-webkit-clip-path: polygon(0 26%, 100% 0, 83% 100%, 6% 84%);
 }
 
         .project-tag-mod{
@@ -68,7 +70,7 @@ z-index: 2;
             margin-right: 0.5rem;
             border-radius: 2px;
             border-width: 0px;
-            font-weight: bold;
+            font-family: Colfax Bold;
             color: #ffffff;
             font-size: 0.5rem;
             padding: 0.7rem 0.8rem 0.6rem 0.8rem;
@@ -112,12 +114,11 @@ z-index: 2;
   </style>
   <body>
 
-<div class="Rectangle is-hidden-mobile"></div>
-<div class="Rectangle1 is-hidden-mobile"></div>
-<div class="Rectangle2 is-hidden-mobile"></div>
+
+
 
   <section>
-    <nav class="navbar" role="navigation" aria-label="main navigation" style="padding-top: 2rem; padding-right: 2rem;">
+    <nav class="navbar nav-padding-mod" role="navigation" aria-label="main navigation" style="padding-top: 2rem;">
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -159,51 +160,52 @@ z-index: 2;
                   </div>
                 </div>
         </section>
-        <section style="background-color: #1d1d1d; position:relative;" id="project-section" >
-          <div class="bg-lines"></div>
+        <section style="background-color: #1d1d1d; position:relative; padding-bottom: 3rem; z-index: 2; box-shadow: 0px 23px 120px -30px rgba(29,29,29,1), 0px -23px 130px -35px rgba(29,29,29,1);" id="project-section" >
             <div class="container" style="padding:3rem 0;">
                 <div class="columnn home-padding-mod">
                     <div class="column is-two-fifths body-text-padding-mod jugaad">
-                        <p class="home-header-text has-text-white" style="z-index: 5;">Here's a few project that I've worked on the past few years.</p>
+                        <p class="home-header-text has-text-white" style="z-index: 5;">Here's a few projects that I've worked on the past few years.</p>
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                    <div  style="position:relative; z-index:100;" class="column is-5 card-margin-mod">
+                      <div class="Rectangle is-hidden-mobile"></div>
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                                     <a class="button project-tag-mod">UI</a>
                             </div>
-                        <div  class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                        <div class="card" style="background-image: url('css/assets/Card1.png'); background-position: center; background-size: cover; height: auto; border-radius: 2px;">
                             <div class="card-content card-styling">
                                 <div class="media card-title-padding-mod" >
-                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">Aadhaar Tech</p>
+                                        <a class="card-title-text is-size-5-mobile" href="https://adikundu.github.io/aadhaar" style="margin-bottom: 0rem;"><span><nobr>Aadhaar Tech</nobr></span></a>
                                 </div>
 
                                 <div class="content">
                                     <p class="card-body-text">I was required to design the visual identity and digital interfaces of the new product division of Labwire Tech Pvt Ltd called Aadhaar Tech, which focuses on providing Aadhaar based technological solutions</p>
                                 </div>
 
-                                <a class="card-body-text" href="https://adikundu.github.io/aadhaar"><span><nobr>Learn more</nobr></span>
+                                <a class="card-body-text" href="https://adikundu.github.io/aadhaar" style="color: #1D1D1D;"><span><nobr>Learn more</nobr></span>
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <div style="position:relate;z-index:100"  class="column is-5 is-offset-2 card-margin-mod">
+                    <div style="position:relative; z-index:100;"  class="column is-5 is-offset-2 card-margin-mod">
+                      <div class="Rectangle1 is-hidden-mobile"></div>
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
-                        <div class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                        <div class="card" style="background-image: url('css/assets/Card2.png'); background-position: center; background-size: cover; height: auto; border-radius: 3px;">
                             <div class="card-content card-styling">
                                 <div class="media card-title-padding-mod">
-                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">CSE Association</p>
+                                        <a class="card-title-text is-size-5-mobile" href="https://adikundu.github.io/csea" style="margin-bottom: 0rem;"><span><nobr>CSE Association</nobr></span></a>
                                     </div>
 
                                 <div class="content">
                                     <p class="card-body-text"> I worked on the development of the visual identity of CSE Association, the student-run association of the department of Computer Science and Engineering SRM IST.<a class="katwao-apna"> You've found an Easter Egg!</a></p>
                                 </div>
 
-                                <a class="card-body-text" href="https://adikundu.github.io/csea"><span><nobr>Learn more</nobr></span>
+                                <a class="card-body-text" href="https://adikundu.github.io/csea" style="color: #1D1D1D;"><span><nobr>Learn more</nobr></span>
                                 </a>
                             </div>
                         </div>
@@ -211,21 +213,22 @@ z-index: 2;
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                    <div  style="position:relative;z-index:100" class="column is-5 card-margin-mod">
+                      <div class="Rectangle2 is-hidden-mobile"></div>
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
-                        <div  class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                        <div  class="card" style="background-image: url('css/assets/Card3.png'); background-position: center; background-size: cover; height: auto; border-radius: 3px;">
                             <div class="card-content card-styling">
                                 <div class="media card-title-padding-mod" >
-                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">Campskil</p>
+                                        <a class="card-title-text is-size-5-mobile" href="https://adikundu.github.io/campskil" style="margin-bottom: 0rem;"><span><nobr>Campskil</nobr></span></a>
                                 </div>
 
                                 <div class="content">
                                     <p class="card-body-text">I was required to design the visual identity for Campskil, an ed-tech startup that focuses on organizing skill develpoment workshops in colleges and schools.</p>
                                 </div>
 
-                                <a class="card-body-text" href="https://adikundu.github.io/campskil"><span><nobr>Learn more</nobr></span>
+                                <a class="card-body-text" href="https://adikundu.github.io/campskil" style="color: #1D1D1D;"><span><nobr>Learn more</nobr></span>
                                 </a>
                             </div>
                         </div>
@@ -244,10 +247,10 @@ z-index: 2;
                                       <p class="is-footer-text">To know more about me, you can find me on <a class="footer-link" href="https://www.instagram.com/adikundu/"><span><nobr>Instagram</nobr></span></a> and
                                           <a class="footer-link" href="https://www.linkedin.com/in/adikundu/"><span><nobr>LinkedIn</nobr></span></a>.</p>
                                   </div>
-                                  <div class="column is-4 is-offset-3">
-                                      <p class="project-image-label credits-padding-mod">
-                                          With some legendary assist from <a class="footer-link" href="https://github.com/mainadw"><span><nobr>Adwitiya</nobr></span></a>, this site was designed and developed at home! ^.^
-                                      </p>
+                                  <div class="column is-2 is-offset-2 is-hidden-mobile" style="max-height: 10rem;">
+                                    <figure class="image is-4by5" style="width: 23rem; margin-top: -7rem;">
+                                      <img id="eggo-img" src="css/assets/lilCactus.gif">
+                                    </figure>
                                   </div>
                               </div>
                           </div>
@@ -261,17 +264,7 @@ z-index: 2;
     </div>
 
     <script type="text/javascript" src="lib/main.js">
-      function Start() {
 
-        $('#eggo-hover').on({
-
-        mouseenter: function () { $('#eggo-img').prop('src', 'css/assets/lilWhale1.gif') },
-        mouseleave: function () { $('#eggo-img').prop('src', 'css/assets/lilWhale.png') }
-
-          });
-}
-
-$(Start);
     </script>
 
 
